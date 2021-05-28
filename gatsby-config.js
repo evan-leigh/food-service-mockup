@@ -14,6 +14,17 @@ module.exports = {
     `gatsby-plugin-sass`,
 
     {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `epilogue\:700, 800, 900`,
+          `poppins\:400, 600`,
+        ],
+        display: 'swap'
+      }
+    },
+
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
