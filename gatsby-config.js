@@ -4,6 +4,9 @@ module.exports = {
     description: `This project is an exercise in making a website that relates to the food industry.`,
     author: `Evan Smith`,
   },
+
+  pathPrefix: "/food-service-mockup/src/pages",
+
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
@@ -25,7 +28,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`,
+        icon: `src/images/icon.png`,
       },
     },
   ],
