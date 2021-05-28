@@ -24,6 +24,7 @@ npm clone https://github.com/evan-leigh/food-service-mockup
 ```
 cd food-serve-mockup
 ```
+
 ```
 npm start
 ```
@@ -33,13 +34,17 @@ Your site is now running at http://localhost:8000.
 
 # <small> Built with: </small>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css">
-<div style="display: flex; gap: 20px; align-items: end; height: 30px">
-<i style="font-size: 30px" class="devicon-html5-plain colored"></i>
-<i style="font-size: 30px" class="devicon-css3-plain colored"></i>
-<i style="font-size: 30px" class="devicon-javascript-plain colored"></i>
-<i style="font-size: 30px" class="devicon-sass-original colored"></i>
-<img style="width: 30px; height: 30px;" src="https://avatars.githubusercontent.com/u/20658825?s=200&v=4"/>
-<i style="font-size: 30px" class="devicon-react-original colored"></i>
-<i style="font-size: 30px" class="devicon-gatsby-plain colored"></i>
-</div>
+
+ 
+![html-5](https://user-images.githubusercontent.com/51345945/120022555-8f10d780-bfba-11eb-90b8-9175fa8bc90d.png)
+![css-3](https://user-images.githubusercontent.com/51345945/120022622-a8198880-bfba-11eb-9dfe-e53d25148e6e.png)
+![javascript](https://user-images.githubusercontent.com/51345945/120023045-40b00880-bfbb-11eb-8716-8b4386f85e69.png)
+![sass](https://user-images.githubusercontent.com/51345945/120023154-69d09900-bfbb-11eb-8b8b-7955c8206f11.png)
+![styled-components](https://user-images.githubusercontent.com/51345945/120023312-9b496480-bfbb-11eb-8816-4a2bba39fa1f.png)
+![react](https://user-images.githubusercontent.com/51345945/120023489-d77cc500-bfbb-11eb-8c29-e018078dc92b.png)
+![gatsby](https://user-images.githubusercontent.com/51345945/120023539-f11e0c80-bfbb-11eb-956c-cd17f9adae74.png)
+
+
+
+
+
