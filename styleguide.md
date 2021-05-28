@@ -29,6 +29,7 @@
 </br>
 
 # <small>Typography</small>
+</br>
 
 ## Font Familes
 ### Header Font: <small>`"Epilogue", sans-serif`</small>
