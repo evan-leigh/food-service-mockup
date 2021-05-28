@@ -1,0 +1,11 @@
+//  1 - Library
+    @import './library/variables';
+    @import './library/mixins';
+    @import './library/classes';
+
+//  2 - Global
+    @import './global/fonts';
+    @import './global/reset';
+
+//  3 - Pages
+    @import './pages/home'
