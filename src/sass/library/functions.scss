@@ -1,0 +1,14 @@
+@use "sass:math";
+
+$default-font-size: 16; // Browser default font size
+
+// Em Converter
+@function em($pixels, $context: $default-font-size) {
+  @return math.div($pixels, $context) * 1em;
+}
+
+// Rem Converter
+@function rem($pixels, $context: $default-font-size) {
+  @return math.div($pixels, $context) * 1rem;
+}
+
