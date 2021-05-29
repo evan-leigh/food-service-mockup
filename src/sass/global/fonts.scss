@@ -51,6 +51,8 @@ body {
   // Links
   color: inherit;
   text-decoration: none;
+  padding: var(--padding) calc(var(--padding) * 1.5);
+  font-weight: 600;
 
   &.large {
     font-size: em(21);
