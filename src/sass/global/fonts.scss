@@ -1,14 +1,14 @@
 body {
-  font-family: $body-font;
+  font-family: var(--body-font);
   font-size: 16px;
-  line-height: $default-line-height
+  line-height: var(--default-line-height)
 }
 
 .header {
   // Headers
-  line-height: $default-line-height * 1;
-  font-family: $header-font;
-  color: $header-font-color;
+  line-height: var(--default-line-height);
+  font-family: var(--header-font);
+  color: var(--header-font-color);
 
   &.large {
     font-size: em(45);
@@ -28,8 +28,8 @@ body {
 
 .paragraph {
   // Paragraphs
-  line-height: $default-line-height * 1.2;
-  color: $body-font-color;
+  line-height: calc(var(--default-line-height) * 1.2);
+  color: var(--body-font-color);
 
   &.large {
     font-size: em(22);
