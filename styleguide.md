@@ -1,59 +1,67 @@
 
-# <small>Page</small>
-### Page Max Width: <small>`1380px`</small>
-### Page Padding: <small>`0 5vw`</small>
+## *Page*
+</br>
+
+### Page Width: 1380px
+</br>
 </br>
 
 ## Break Points
-### Desktop Breakpoint: <small>`860px`</small>
-### Tablet Breakpoint: <small>`600px`</small>
-### Phone Breakpoint: <small>`320px`</small>
-</br>
+---
+### Desktop Breakpoint: 1260px
+### Tablet Breakpoint: 890px
+### Phone Breakpoint: 640px
 </br>
 </br>
 
-# <small>Color Palette</small>
+## *Color Palette*
 </br>
 
 ## Brand Colors
-### Primary: <small>`hsl(108, 93%, 38%)`</small>
-### Secondary: <small>`hsl(106, 39%, 94%)`</small>
+---
+### Primary: hsl(108, 93%, 38%)
+### Secondary: hsl(106, 39%, 94%)
 </br>
 
 ## Neutral
-### White: <small>`hsl(0, 0%, 100%)`</small>
-### Gray: <small>`hsl(0, 0%, 60%)`</small>
-### Dark: <small>`hsl(120, 9%, 17%)`</small>
-</br>
-</br>
-</br>
-
-# <small>Typography</small>
-</br>
-
-## Font Familes
-### Header Font: <small>`"Epilogue", sans-serif`</small>
-### Header Font Color: <small>`"hsl(120, 9%, 17%)`</small>
-</br>
-
-### Body Font: <small>`"Poppins", sans-serif`</small>
-### Body Font Color: <small>`"hsl(0, 0%, 60%)`</small>
+---
+### White: hsl(0, 0%, 100%)
+### Gray: hsl(0, 0%, 60%)
+### Dark: hsl(120, 9%, 17%)
 </br>
 </br>
 
-
-## Font Sizes
-### Header Large: <small>`45px`</small>
-### Header Medium: <small>`39px`</small>
-### Header Small: <small>`33px`</small>
+## *Typography*
 </br>
 
-### Paragraph Large: <small>`22px`</small>
-### Paragraph Medium: <small>`18px`</small>
-### Paragraph Small: <small>`16px`</small>
+## Font Familes:
+---
+### Header Font: "Epilogue", sans-serif
+### Header Font Color: "hsl(120, 9%, 17%)
 </br>
 
-### Link Large: <small>`21px`</small>
-### Link Medium: <small>`19px`</small>
-### Link Small: <small>`16px`</small>
+### Body Font: "Poppins", sans-serif
+### Body Font Color: "hsl(0, 0%, 60%)
+</br>
+
+### Iconography: [Ionicons 5](https://react-icons.github.io/react-icons/icons?name=io5)
+</br>
+</br>
+
+
+## Font Sizes:
+---
+### Header Large: 45px
+### Header Medium: 39px
+### Header Small: 33px
+</br>
+
+### Paragraph Large: 22px
+### Paragraph Medium: 18px
+### Paragraph Small: 16px
+</br>
+
+### Link Large: 21px
+### Link Medium: 19px
+### Link Small: 16px
 </br>
