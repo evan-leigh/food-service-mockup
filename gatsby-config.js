@@ -15,6 +15,13 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     
     {
+      resolve: 'babel-plugin-styled-components',
+      options: {
+        ssr: false
+      }
+    },
+
+    {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
