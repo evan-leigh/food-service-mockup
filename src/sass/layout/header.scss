@@ -1,0 +1,94 @@
+header {
+  padding: $padding * 3.5 $page-margin;
+
+  nav {
+    margin-left: auto;
+    width: fit-content;
+    display: flex;
+  }
+
+  .mobile {
+    display: none;
+    align-items: center;
+    width: 100%;
+  }
+
+  .panel {
+    position: fixed;
+    top: 0; right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 100vh;
+    background: $dark;
+    color: $white;
+
+    .link {
+      width: 180px;
+    }
+  }
+
+  
+  .mobile.open {
+    overflow: visible !important;
+    .rect-1, .rect-2, .rect-3 {
+      transition: all 0.3s ease;
+      width: 32px;
+      fill: white;
+    }
+  }
+
+  .mobile.close {
+    .rect-1, .rect-2, .rect-3 {
+      transition: all 0.3s ease;
+      fill: black;
+    }
+
+  }
+
+  .mobile-menu {
+    transform: scaleX(-1);
+    position: fixed;
+    top: 40px;
+    right: 25px;
+    z-index: 100;
+  }
+  
+.panel-enter {
+  transform: translateX(100%);
+  transition: all 0.4s ease;
+}
+
+.panel-enter-active {
+  transform: translateX(0%);
+  transition: all 0.4s ease;
+}
+
+.panel-exit {
+  transform: translateX(0%);
+  transition: all 0.4s ease;
+}
+
+.panel-exit-active {
+  transform: translateX(100%);
+  transition: all 0.4s ease;
+}
+
+  @media (max-width: $tablet) {
+    nav {
+      flex-direction: column;
+      margin: auto;
+      gap: 20px;
+    }
+
+    .mobile {
+      display: flex;
+    }
+
+    .desktop {
+      display: none;
+    }
+  }
+}
+

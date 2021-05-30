@@ -2,56 +2,52 @@ import * as React from "react"
 
 import { Link } from "gatsby"
 
-import { device } from "./device"
-import styled from "styled-components"
+import MobileMenu from "../assets/icons/mobile-menu.svg"
 
-const Container = styled.header`
-  padding: 30px var(--gap-small);
-  max-width: var(--page-width);
-  margin: 0 auto;
-`
+import { CSSTransition } from "react-transition-group"
 
-const NavigationMobile = styled.nav`
-  display: flex;
-  width: max-content; 
-  margin-left: auto;
-  display: none;
-  
-  @media ${device.tablet} {
-    display: flex;
+const MobileNavigation = () => {
+  const [open, setOpen] = React.useState(false)
+
+  const Panel = ({ className }) => {
+    return (
+      <nav className={className}>
+        <Link className="link large" to="/"> How It Works </Link>
+        <Link className="link large" to="/"> Blog </Link>
+        <Link className="link large" to="/"> Pricing </Link>
+        <Link className="link large" to="/"> Sign up </Link>
+      </nav>
+    )
   }
-`
 
-const Navigation = styled.nav`
-  display: flex;
-  gap: var(--gap-large);
-  width: max-content; 
-  margin-left: auto;
-
-  @media ${device.tablet} {
-    display: none;
-  }
-`
-
-const NavLink = ({children, to}) => {
-   return (
-    <Link to={to} className="link small">{children}</Link>
+  return (
+    <div className={open ? "mobile open" : "mobile close"}>
+      <MobileMenu onClick={() => setOpen(!open)} />
+      <CSSTransition in={open} timeout={400} classNames="panel" unmountOnExit>
+        <Panel className="panel" />
+      </CSSTransition>
+    </div>
   )
 }
 
-const Header = () => (
-  <Container>
-      <Navigation>
-        <NavLink to="/">How It Works</NavLink>
-        <NavLink to="/">Blog</NavLink>
-        <NavLink to="/">Pricing</NavLink>
-        <NavLink to="/">Sign up</NavLink>
-      </Navigation>
+const DesktopNavigation = () => {
+  return (
+    <nav className="desktop">
+      <Link className='link small' to="/"> How It Works </Link>
+      <Link className='link small' to="/"> Blog </Link>
+      <Link className='link small' to="/"> Pricing </Link>
+      <Link className='link small' to="/"> Sign up </Link>
+    </nav>
+  )
+}
 
-      <NavigationMobile>
-        <NavLink to="/">How It Works</NavLink>
-      </NavigationMobile>
-  </Container>
-)
+const Header = () => {
+  return (
+    <header>
+      <DesktopNavigation />
+      <MobileNavigation />
+    </header>
+  )
+}
 
 export default Header
