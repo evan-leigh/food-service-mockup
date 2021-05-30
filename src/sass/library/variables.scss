@@ -1,42 +1,41 @@
 
-:root {
     //  Colors
-        --primary: hsl(108, 93%, 38%);
-        --secondary: hsl(106, 39%, 94%);
+        $primary: hsl(108, 93%, 38%);
+        $secondary: hsl(106, 39%, 94%);
     
-        --white: hsl(0, 0%, 100%);
-        --gray: hsl(0, 0%, 60%);
-        --dark: hsl(120, 9%, 17%);
+        $white: hsl(0, 0%, 100%);
+        $gray: hsl(0, 0%, 60%);
+        $dark: hsl(120, 9%, 17%);
     
     //  Font Styles
-        --default-line-height: 1.35;
-        --header-font: "Epilogue", sans-serif;
-        --header-font-color: var(--dark);
+        $default-line-height: 1.35;
+        $header-font: "Epilogue", sans-serif;
+        $header-font-color: $dark;
     
-        --body-font: "Poppins", sans-serif;
-        --body-font-color: var(--gray);
+        $body-font: "Poppins", sans-serif;
+        $body-font-color: $gray;
     
     //  Spacing
-        --gap-large: 30px;
-        --gap-medium: 20px;
-        --gap-small: 15px;
+        $gap-large: 30px;
+        $gap-medium: 20px;
+        $gap-small: 15px;
         
-        --padding: 10px;
-        --margin: 10px;
+        $padding: 10px;
+        $margin: 10px;
     
     //  Page
-        --page-width: 1200px;
-        --desktop-breakpoint: 700px;
+        $page-width: 1442px;
+        $desktop-breakpoint: 700px;
     
     //  Border Radius
-        --border-radius-large: 12px;
-        --border-radius-medium: 9px;
-        --border-radius-small: 6px;
+        $border-radius-large: 12px;
+        $border-radius-medium: 9px;
+        $border-radius-small: 6px;
     
     //  Box Shadows
-        --shadow-color: rgba(0, 16, 75, 0.2);
+        $shadow-color: rgba(0, 16, 75, 0.2);
     
-        --box-shadow-large: var(--shadow-color) 0px 6px 6px 0px;
-        --box-shadow-medium: var(--shadow-color) 0px 4px 5px 0px;
-        --box-shadow-sm: var(--shadow-color) 0px 2px 4px 0px;
-}
+        $box-shadow-large: $shadow-color 0px 6px 6px 0px;
+        $box-shadow-medium: $shadow-color 0px 4px 5px 0px;
+        $box-shadow-sm: $shadow-color 0px 2px 4px 0px;
+

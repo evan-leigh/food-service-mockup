@@ -11,4 +11,3 @@ $default-font-size: 16; // Browser default font size
 @function rem($pixels, $context: $default-font-size) {
   @return math.div($pixels, $context) * 1rem;
 }
-

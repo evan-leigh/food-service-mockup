@@ -1,14 +1,19 @@
 body {
-  font-family: var(--body-font);
   font-size: 16px;
-  line-height: var(--default-line-height)
+  font-family: $body-font;
+  line-height: $default-line-height;
+}
+
+svg {
+  width: 32px;
+  height: 32px;
 }
 
 .header {
   // Headers
-  line-height: var(--default-line-height);
-  font-family: var(--header-font);
-  color: var(--header-font-color);
+  line-height: $default-line-height;
+  font-family: $header-font;
+  color: $header-font-color;
 
   &.large {
     font-size: em(45);
@@ -28,8 +33,8 @@ body {
 
 .paragraph {
   // Paragraphs
-  line-height: calc(var(--default-line-height) * 1.2);
-  color: var(--body-font-color);
+  line-height: $default-line-height * 1.2;
+  color: $body-font-color;
 
   &.large {
     font-size: em(22);
@@ -51,7 +56,7 @@ body {
   // Links
   color: inherit;
   text-decoration: none;
-  padding: var(--padding) calc(var(--padding) * 1.5);
+  padding: $padding $padding * 1.5;
   font-weight: 600;
 
   &.large {
