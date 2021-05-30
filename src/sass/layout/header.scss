@@ -1,5 +1,4 @@
 header {
-  padding: $padding * 3.5 $page-margin;
 
   nav {
     margin-left: auto;
@@ -48,6 +47,7 @@ header {
   }
 
   .mobile-menu {
+    cursor: pointer;
     transform: scaleX(-1);
     position: fixed;
     top: 40px;

@@ -22,7 +22,9 @@ const MobileNavigation = () => {
 
   return (
     <div className={open ? "mobile open" : "mobile close"}>
-      <MobileMenu onClick={() => setOpen(!open)} />
+      <button className="mobile-menu" onClick={() => setOpen(!open)}>
+        <MobileMenu />
+      </button>
       <CSSTransition in={open} timeout={400} classNames="panel" unmountOnExit>
         <Panel className="panel" />
       </CSSTransition>
