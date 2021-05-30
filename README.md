@@ -4,7 +4,9 @@
 ## Description 
 This project is an exercise in making a website that relates to the food industry. In this project, you'll find source code along with a style guide for the project.
 
-[Live Demo](https://evan-leigh.github.io/food-service-mockup/)
+
+[Netlify (Working Demo)](https://clever-sinoussi-e67b43.netlify.app/)
+[Github Pages (Broken Demo)](https://evan-leigh.github.io/food-service-mockup/)
 
 
 <br />
