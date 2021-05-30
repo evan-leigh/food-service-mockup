@@ -1,13 +1,19 @@
 //  1 - Library
-    @import './library/variables';
-    @import './library/functions';
-    @import './library/mixins';
-    @import './library/classes';
+    @import './libraries/variables';
+    @import './libraries/functions';
+    @import './libraries/mixins';
+    @import './libraries/classes';
     
 //  2 - Global
     @import './global/reset';
     @import './global/fonts';
     @import './global/helpers';
 
-//  3 - Pages
+//  3 - Modules
+
+//  4 - Layout
+    @import './layout/breakpoints.scss';
+    @import './layout/header.scss';
+
+//  5 - Pages
     @import './pages/home'
