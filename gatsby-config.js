@@ -12,14 +12,6 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sass`,
-    `gatsby-plugin-styled-components`,
-    
-    {
-      resolve: 'babel-plugin-styled-components',
-      options: {
-        ssr: false
-      }
-    },
 
     {
       resolve: `gatsby-plugin-google-fonts`,
