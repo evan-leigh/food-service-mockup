@@ -7,13 +7,18 @@
 //  2 - Global
     @import './global/reset';
     @import './global/fonts';
+    @import './global/page.scss';
     @import './global/helpers';
 
 //  3 - Modules
+    @import "./components/buttons.scss";
 
+    
 //  4 - Layout
     @import './layout/breakpoints.scss';
     @import './layout/header.scss';
+    @import './layout/inner.scss';
+    @import './layout/content.scss';
 
 //  5 - Pages
     @import './pages/home'

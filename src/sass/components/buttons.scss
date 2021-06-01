@@ -1,0 +1,19 @@
+button {
+
+    font-family: $body-font; 
+    border-radius: 5px;
+
+    &.primary {
+        background-color: $primary;
+        color: $white;
+    }
+}
+
+input {
+    padding: $padding * 2;
+    margin-right: 20px;
+    font-family: $body-font;
+    border-radius: 5px;
+    border: none;
+    height: 100%;
+}
