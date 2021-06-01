@@ -7,11 +7,11 @@ import '../sass/main.scss'
 
 const Layout = ({ children }) => {
   return (
-    <>
+    <main>
       <Header />
-      <main>{children}</main>
+      {children}
       <Footer />
-    </>
+    </main>
   )
 }
 
