@@ -50,6 +50,7 @@ svg {
 .link {
   color: inherit;
   padding: $padding $padding * 1.5;
+  letter-spacing: 0.04em;
   font-weight: 600;
 
   &.large {
@@ -62,5 +63,6 @@ svg {
 
   &.small {
     font-size: em(16);
+    letter-spacing: 0.06em;
   }
 }
