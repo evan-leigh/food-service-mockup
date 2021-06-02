@@ -19,7 +19,7 @@ This project is an exercise in making a website that relates to the food industr
 
 ## Clone the github repository
 ```
-npm clone https://github.com/evan-leigh/food-service-mockup
+git clone https://github.com/evan-leigh/food-service-mockup
 ```
 <br />
 
