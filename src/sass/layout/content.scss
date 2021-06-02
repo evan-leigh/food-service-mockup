@@ -1,6 +1,10 @@
 .content {
     display: flex;
     flex-direction: column;
-    width: 50%;
-    gap: $gap-medium
+    flex-shrink: 1;
+    flex-grow: 1;
+    max-width: 700px;
+    flex-basis: 500px;
+    gap: $gap-medium;
+    min-height: 2px;
 }

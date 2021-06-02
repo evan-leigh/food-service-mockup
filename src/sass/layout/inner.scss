@@ -1,6 +1,13 @@
 .inner {
     display: flex;
     align-items: center;
-    width: $page-width;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: $gap-medium;
+    flex-shrink: 1;
+    max-width: $page-width;
+    flex-basis: $page-width;
     min-height: 800px;
+    padding: 0 20px;
 }

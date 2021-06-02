@@ -1,0 +1,8 @@
+section {
+    display: grid;
+    flex-direction: column;
+    gap: $gap-medium;
+    padding: 0 $gap-medium;
+    overflow-y: hidden;
+    max-width: $page-width;
+}

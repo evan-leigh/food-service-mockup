@@ -15,8 +15,13 @@ header {
     width: 100%;
   }
 
+  .desktop {
+    // width: 890px;
+  }
+
   .panel {
     position: fixed;
+    z-index: 100;
     top: 0; right: 0;
     display: flex;
     justify-content: center;
@@ -52,10 +57,10 @@ header {
   .mobile-menu {
     cursor: pointer;
     transform: scaleX(-1);
+    z-index: 200;
     position: fixed;
     top: 40px;
     right: 25px;
-    z-index: 100;
   }
   
 .panel-enter {

@@ -14,19 +14,35 @@ svg {
   font-family: $header-font;
   color: $header-font-color;
 
+  $header-large: 45;
+  $header-medium: 39;
+  $header-small: 33;
+
   &.large {
-    font-size: em(45);
-    font-weight: 900
+    font-size: em($header-large);
+    font-weight: 900;
   }
 
   &.medium {
-    font-size: em(39);
-    font-weight: 800
+    font-size: em($header-medium);
+    font-weight: 800;
   }
 
   &.small {
-    font-size: em(33);
-    font-weight: 700
+    font-size: em($header-small);
+    font-weight: 700;
+  }
+
+  @include at-mobile {
+    &.large {
+      font-size: em($header-large) * 0.75;
+    }
+    &.medium {
+      font-size: em($header-medium) * 0.75;
+    }
+    &.small {
+      font-size: em($header-small) * 0.75;
+    }
   }
 }
 
@@ -34,16 +50,32 @@ svg {
   line-height: $default-line-height * 1.2;
   color: $body-font-color;
 
+  $paragraph-large: 22;
+  $paragraph-medium: 18;
+  $paragraph-small: 16;
+
   &.large {
-    font-size: em(22);
+    font-size: em($paragraph-large);
   }
 
   &.medium {
-    font-size: em(18);
+    font-size: em($paragraph-medium);
   }
 
   &.small {
-    font-size: em(16);
+    font-size: em($paragraph-small);
+  }
+
+  @include at-mobile {
+    &.large {
+      font-size: em($paragraph-large) * 0.95;
+    }
+    &.medium {
+      font-size: em($paragraph-medium) * 0.95;
+    }
+    &.small {
+      font-size: em($paragraph-small) * 0.95;
+    }
   }
 }
 
@@ -53,16 +85,32 @@ svg {
   letter-spacing: 0.04em;
   font-weight: 600;
 
+  $link-large: 21;
+  $link-medium: 19;
+  $link-small: 16;
+
   &.large {
-    font-size: em(21);
+    font-size: em($link-large);
   }
 
   &.medium {
-    font-size: em(19);
+    font-size: em($link-medium);
   }
 
   &.small {
-    font-size: em(16);
+    font-size: em($link-small);
     letter-spacing: 0.06em;
+  }
+
+  @include at-mobile {
+    &.large {
+      font-size: em($link-large) * 0.95;
+    }
+    &.medium {
+      font-size: em($link-medium) * 0.95;
+    }
+    &.small {
+      font-size: em($link-small) * 0.95;
+    }
   }
 }
