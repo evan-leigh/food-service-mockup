@@ -2,8 +2,10 @@ import Layout from '../layout/layout'
 import * as React from 'react'
 import Seo from '../layout/seo'
 
-import DishesA from '../assets/images/dishes-A.png'
-import DishesA_Mobile from '../assets/images/dishes-A-mobile.png'
+import {StaticImage} from 'gatsby-plugin-image'
+
+// import DishesA from '../assets/images/dishes-A.png'
+// import DishesA_Mobile from '../assets/images/dishes-A-mobile.png'
 
 const Home = () => (
   <Layout>
@@ -12,10 +14,23 @@ const Home = () => (
       <div className='inner'>
         <div className='content image'>
           <div className='dishes-A'>
-            <img src={DishesA} alt='' />
+            <StaticImage
+              layout="fullWidth"
+              width={900}
+              height={1200}
+              quality={95}
+              src="../assets/images/dishes-A.png"
+              alt=''
+            />
           </div>
           <div className='dishes-A-mobile'>
-            <img src={DishesA_Mobile} alt='' />
+            <StaticImage
+              layout='fullWidth'
+              width={900}
+              height={1200}
+              src="../assets/images/dishes-A-mobile.png"
+              alt=''
+            />
           </div>
         </div>
         <div className='content'>
@@ -23,30 +38,30 @@ const Home = () => (
           <h1 className='header large'>
             Healthy and delicious meals all customized to your liking
           </h1>
-          <form className="links" action='' style={{
-            maxWidth: "530px",
-            width: "100%"
+          <form
+            className='links'
+            action=''
+            style={{
+              maxWidth: '530px',
+              width: '100%',
             }}>
             <input
               type='text'
               placeholder='Your email address'
               className='paragraph small'
             />
-            <button
-              className='primary link small'
-              style={{height: "65px" }}
-            >
+            <button className='primary link small' style={{height: '65px'}}>
               Get Started
             </button>
           </form>
-          <div className='paragraph small' style={{maxWidth: '544px'}}>
+          <p className='paragraph small' style={{maxWidth: '544px'}}>
             Nunc nulla quis ipsum, eget faucibus quis. Arcu ut in augue amet.
             Tempus nascetur fringilla eget mi arcu morbi.
-          </div>
+          </p>
         </div>
       </div>
     </section>
-    <section className="steps"></section>
+    <section className='steps'></section>
   </Layout>
 )
 
