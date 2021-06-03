@@ -16,9 +16,8 @@ const Home = () => (
           <div className='dishes-A'>
             <StaticImage
               layout="fullWidth"
-              width={900}
-              height={1200}
               quality={95}
+              placeholder="none"
               src="../assets/images/dishes-A.png"
               alt=''
             />
@@ -26,8 +25,7 @@ const Home = () => (
           <div className='dishes-A-mobile'>
             <StaticImage
               layout='fullWidth'
-              width={900}
-              height={1200}
+              placeholder="none"
               src="../assets/images/dishes-A-mobile.png"
               alt=''
             />

@@ -1,0 +1,25 @@
+@font-face {
+    font-family: "Epilogue";
+    src: url("../fonts/Epilogue-ExtraBold.ttf");
+    font-weight: 800;
+    font-display: swap
+  }
+
+  h1 {
+      font-family: "Epilogue", "sans-serif";
+      @include at-mobile {
+          font-size: 36px !important;
+          line-height: 150% !important;
+      }
+      @include at-mobile-small {
+          font-size: 10.5vw !important;
+          line-height: 130% !important;
+      }
+  }
+
+  p {
+    @include at-mobile {
+        font-size: 16px !important;
+        line-height: 140% !important;
+    } 
+  }
