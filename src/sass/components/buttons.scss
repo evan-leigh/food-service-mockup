@@ -2,10 +2,28 @@ button {
 
     border-radius: 5px;
     box-shadow: $box-shadow-sm;
+    width: fit-content;
 
     &.primary {
         background-color: $primary;
         color: $white;
+    }
+
+    &.large {
+        height: 65px;
+        min-width: 220px;
+    }
+    &.medium {
+        min-width: 190px;
+    }
+    &.small {
+        min-width: 170px;
+    }
+
+    svg {
+        vertical-align: middle;
+        width: 32px;
+        height: 32px;
     }
 }
 

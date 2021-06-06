@@ -26,10 +26,14 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 250px;
+    width: 50vw;
     height: 100vh;
     background: $dark;
     color: $white;
+
+    @include at-mobile {
+      width: 80vw;
+    }
 
     .link {
       width: 180px;

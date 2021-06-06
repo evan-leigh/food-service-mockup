@@ -3,28 +3,22 @@ section.hero {
   background-repeat: no-repeat;
   background-size: 100%;
   background-size: cover;
-  height: 100%;
-  
-  .header {
-    max-width: 530px;
-  }
-
-
-  
-
-  form {
-    max-width: 54 0px;
-    display: flex;
-    justify-content: space-between;
-    input {
-      flex-basis: 100px;
-      flex-grow: 1;
-      flex-shrink: 1;
-    }
-  }
 
   @include at-breakpoint {
     height: 1100px;
+    .inner {
+      justify-content: space-around;
+    }
+    .content {
+      max-width: 500px;
+    }
+  }
+  form {
+    justify-content: space-between;
+    input {
+      flex-grow: 1;
+      flex-shrink: 1;
+    }
   }
 
   .image {
@@ -35,25 +29,22 @@ section.hero {
     }
 
     .dishes-A {
-
+      @include absolute-center-xy;
+      left: 15%;
       @include at-breakpoint {
         display: none;
       }
     }
 
     .dishes-A-mobile {
-      @include absolute-center-xy;
+      position: absolute;
       transform: translate(-50%, -50%) rotate(-35deg);
-      top: 100px;
+      top: 260px;
       left: 50%;
       width: 200%;
       min-width: 700px;
       max-width: 1000px;
       display: none;
-
-      img {
-        width: 100%;
-      }
 
       @include at-breakpoint {
         display: inline;
@@ -65,17 +56,205 @@ section.hero {
 section.steps {
   background-color: $white;
   box-shadow: 10px -15px 54px 0px hsla(0, 0%, 0%, 0.08);
-  height: 400px;
+  overflow: visible;
   position: relative;
+  padding-left: 2vw;
   width: 100%;
+
+  .line-mobile {
+    display: none;
+  }
+
+  @include at-breakpoint {
+
+    height: 1100px;
+
+    .line {
+      display: none;
+    }
+
+    .line-mobile {
+      display: flex;
+    }
+  }
+
+  .header {
+    @include at-breakpoint {
+      justify-content: space-around;
+      margin: 2rem auto;
+      max-width: 437px;
+    }
+  }
+
+  .content {
+    gap: 60px;
+    height: 400px;
+  }
+
+  .inner {
+    @include at-breakpoint {
+      height: 700px;
+    }
+  }
 
   &::after {
     content: '';
     position: absolute;
-    bottom: 0px;
     left: 0;
     width: 100%;
+    bottom: -60px;
     height: 100px;
     background: $white;
+  }
+
+  .steps-content {
+    justify-content: space-between;
+    flex-direction: row;
+    min-width: 1204px;
+    max-width: 1463px;
+    gap: 78px;
+    width: 70vw;
+    left: 58.5%;
+
+    @media screen and (max-width: 1381px) {
+      width: 60vw;
+      max-width: 100vw;
+      min-width: 980px;
+    }
+
+    @include at-breakpoint {
+      flex-direction: column;
+      display: inline-block;
+      height: fit-content;
+      min-width: 0;
+      order: -1;
+      max-width: 264px;
+      width: 264px;
+    }
+  }
+
+  .graph {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+
+    @include at-breakpoint {
+      justify-content: space-around;
+      flex-direction: row;
+      margin: 0 auto;
+      max-width: 500px;
+      height: 427px;
+    }
+  }
+
+  .steps-graph {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 58vw;
+    height: 32px;
+    min-width: 981px;
+    max-width: 1178px;
+
+    @media screen and (max-width: 1381px) {
+      width: 48vw;
+      max-width: 100vw;
+      min-width: 817px;
+    }
+
+    @include at-breakpoint {
+      flex-direction: column;
+      justify-content: center;
+      width: fit-content;
+      min-width: 0;
+      width: 200px;
+      height: 100%;
+    }
+
+    .steps-graph-svg {
+      svg line {
+        width: 30%;
+        height: 1px;
+      }
+    }
+  }
+}
+
+section.selection {
+  height: 1640px;
+  position: relative;
+
+
+  .dishes-B {
+    z-index: 2;
+    width: 40vw;
+  }
+  
+  .dishes-B-mobile {
+    z-index: 2;
+    @include absolute-center-xy;
+    left: 70%;
+    top: 900px;
+    display: none;
+    position: absolute;
+    max-width: 1000px;
+    min-width: 700px;
+    width: 120%;
+
+    @include at-mobile {
+      margin-top: 50px;
+    }
+
+    img {
+      width: 100%;
+    }
+
+  }
+  
+  @include at-breakpoint {
+    .dishes-B {
+      display: none;
+    }
+    .dishes-B-mobile {
+      display: inline;
+    }
+  }
+
+  .wave-one {
+    position: absolute;
+    pointer-events: none;
+    left: 0;
+    min-width: 1200px;
+    width: 100vw;
+    top: 300px;
+  }
+
+  
+  .headline {
+    min-width: 400px;
+    @include at-breakpoint {
+      margin-top: 530px;
+    }
+    @include at-mobile {
+      transform: translateY(-70px);
+    }
+  }
+}
+
+section.values {
+  .values-list {
+    gap: 120px;
+    min-width: 100vw; 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    @include at-breakpoint {
+      grid-template-columns: 1fr;
+      div {
+        margin: 0 auto;
+        max-width: 400px;
+      }
+    }
   }
 }

@@ -10,13 +10,17 @@ const MobileNavigation = () => {
   
   const [open, setOpen] = React.useState(false)
 
-  const Panel = ({ className }) => {
+  const MobileLink = ({children, to}) => {
+     return <Link className="link medium" to={to}>{children}</Link>
+  }
+
+  const Panel = ({ className}) => {
     return (
       <nav className={className}>
-        <Link className="link medium" to="/">How It Works</Link>
-        <Link className="link medium" to="/">Blog</Link>
-        <Link className="link medium" to="/">Pricing</Link>
-        <Link className="link medium" to="/">Sign up</Link>
+        <MobileLink to="/">How It Works</MobileLink>
+        <MobileLink to="/">Blog</MobileLink>
+        <MobileLink to="/">Pricing</MobileLink>
+        <MobileLink to="/">Sign up</MobileLink>
       </nav>
     )
   }
@@ -32,12 +36,17 @@ const MobileNavigation = () => {
 }
 
 const DesktopNavigation = () => {
+
+  const DesktopLink = ({children, to}) => {
+     return <Link to={to} className="link small">{children}</Link>
+  }
+  
   return (
     <nav className="desktop">
-      <Link className="link small" to="/">How It Works</Link>
-      <Link className="link small" to="/">Blog</Link>
-      <Link className="link small" to="/">Pricing</Link>
-      <Link className="link small" to="/">Sign up</Link>
+      <DesktopLink to="/">How It Works</DesktopLink>
+      <DesktopLink to="/">Blog</DesktopLink>
+      <DesktopLink to="/">Pricing</DesktopLink>
+      <DesktopLink to="/">Sign up</DesktopLink>
     </nav>
   )
 }

@@ -6,20 +6,32 @@
   }
 
   h1 {
-      font-family: "Epilogue", "sans-serif";
       @include at-mobile {
-          font-size: 36px !important;
-          line-height: 150% !important;
+          font-size: 36px;
+          line-height: 1.5em !important;
       }
       @include at-mobile-small {
           font-size: 10.5vw !important;
-          line-height: 130% !important;
       }
+  }
+
+  h2 {
+    @include at-mobile {
+        font-size: 36px;
+        line-height: 1.5em !important;
+    }
+    @include at-mobile-small {
+      font-size: 10.5vw !important;
+    }
+}
+
+  .paragraph.small {
+    font-size: 16px;
   }
 
   p {
     @include at-mobile {
-        font-size: 16px !important;
-        line-height: 140% !important;
+        font-size: 16px;
+        line-height: 140%;
     } 
   }

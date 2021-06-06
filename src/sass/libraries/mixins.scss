@@ -10,6 +10,12 @@
     top: 50%; left: 0;
 }
 
+@mixin absolute-center-x {
+    position: absolute;
+    transform: translateX(-50%);
+    top: 0; left: 50%;
+}
+
 @mixin at-mobile {
     @media screen and (max-width: $mobile-breakpoint) {
         @content

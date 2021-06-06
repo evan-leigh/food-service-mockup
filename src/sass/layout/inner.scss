@@ -3,11 +3,10 @@
     align-items: center;
     margin: 0 auto;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: $gap-medium;
     flex-shrink: 1;
     max-width: $page-width;
     flex-basis: $page-width;
-    min-height: 800px;
     padding: 0 20px;
 }

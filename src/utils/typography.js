@@ -8,11 +8,15 @@ const typography = new Typography({
   bodyFontFamily: ["Poppins", "sans-serif"],
   headerWeight: "900",
   includeNormalize: true,
-
-  overrideStyles: ({adjustFontSizeTo, rhythm}, option, styles) => ({
+  
+  overrideStyles: ({adjustFontSizeTo}) => ({
     h1: {
       ...adjustFontSizeTo("45px"),
     },
+    h2: {
+      ...adjustFontSizeTo("39px"),
+    },
+    
     bodyFontFamily: {
       baseLineHeight: 2.4
     }
