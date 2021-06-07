@@ -1,5 +1,6 @@
-import Layout from '../layout/layout'
 import * as React from 'react'
+
+import Layout from '../layout/layout'
 import Seo from '../layout/seo'
 
 import {StaticImage} from 'gatsby-plugin-image'
@@ -46,7 +47,6 @@ const LineMobile = () => {
       viewBox='0 0 3 180'
       fill='none'
       className='line-mobile'
- 
       xmlns='http://www.w3.org/2000/svg'>
       <path
         d='M1.65045 0.764893L1.65046 179.182'
@@ -159,9 +159,8 @@ const Home = () => {
               </div>
               <div>
                 <h3>Enjoy</h3>
-                <p className='paragraph small'>
-                </p>
-                  Facilisis ipsum molestie felis risus nisl felis ac. Amet orci
+                <p className='paragraph small'></p>
+                Facilisis ipsum molestie felis risus nisl felis ac. Amet orci
               </div>
             </div>
           </div>
@@ -184,6 +183,7 @@ const Home = () => {
               See All Dishes <ArrowForward />
             </Button>
           </div>
+          
           <div className='content'>
             <div className='dishes-B'>
               <StaticImage
@@ -195,6 +195,7 @@ const Home = () => {
                 alt='selection of food'
               />
             </div>
+            
             <div className='dishes-B-mobile'>
               <StaticImage
                 layout='fullWidth'
@@ -203,11 +204,11 @@ const Home = () => {
                 alt='selection of food'
               />
             </div>
-          
+
             <WaveOne className='wave-one' />
           </div>
           <div
-          className="headline"
+            className='headline'
             style={{
               textAlign: 'center',
               margin: '0 auto',
@@ -221,12 +222,14 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="values">
+      <section className='values'>
         <div className='inner'>
           <div className='content values-list'>
             <div>
               <ValueOne />
-              <h2>Vegetarian <br /> Options</h2>
+              <h2>
+                Vegetarian <br /> Options
+              </h2>
               <p>
                 Facilisis ipsum molestie felis risus nisl felis ac. Amet orci
                 augue porta morbi in venenatis ultrices in.
@@ -242,7 +245,9 @@ const Home = () => {
             </div>
             <div>
               <ValueThree />
-              <h2>Grass-fed <br /> Animals</h2>
+              <h2>
+                Grass-fed <br /> Animals
+              </h2>
               <p>
                 Facilisis ipsum molestie felis risus nisl felis ac. Amet orci
                 augue porta morbi in venenatis ultrices in.
