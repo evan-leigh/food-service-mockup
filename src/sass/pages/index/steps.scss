@@ -1,0 +1,139 @@
+section.steps {
+    background-color: $white;
+    box-shadow: 10px -15px 54px 0px hsla(0, 0%, 0%, 0.08);
+    overflow: visible;
+    position: relative;
+    padding-bottom: 0;
+    height: auto;
+    width: 100%;
+  
+    .line-mobile {
+      display: none;
+    }
+  
+    @include at-breakpoint {
+  
+      .line {
+        display: none;
+      }
+  
+      .line-mobile {
+        display: flex;
+      }
+    }
+  
+    .header-container {
+      display: block;
+      width: 100%;
+      @include at-breakpoint {
+        margin: 0 auto;
+      }
+    }
+  
+    .header {
+      max-width: 300px;
+      @include at-mobile {
+        max-width: 290px;
+      }
+      @include at-mobile-small {
+        max-width: 311px;
+      }
+    }
+  
+    .content {
+      gap: 60px;
+    }
+  
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 100%;
+      bottom: -100px;
+      height: 100px;
+      background: $white;
+    }
+  
+    .steps-content {
+      justify-content: space-between;
+      flex-direction: row;
+      min-width: 1204px;
+      flex-basis: auto;
+      max-width: 1463px;
+      gap: 78px;
+      left: 58.5%;
+  
+      @media screen and (max-width: 1381px) {
+        max-width: 100vw;
+        min-width: 980px;
+      }
+  
+      @include at-breakpoint {
+        flex-direction: column;
+        min-width: 0;
+        gap: 53px;
+        order: -1;
+      }
+    }
+  
+    .step {
+      max-width: 13rem;
+    }
+  
+    .graph {
+      max-width: 100%;
+      width: 100%;
+  
+      @include at-breakpoint {
+        justify-content: space-around;
+        flex-direction: row;
+        margin: 0 auto;
+        max-width: 500px;
+      }
+  
+      @include at-mobile {
+        gap: 20px;
+      }
+  
+      @include at-mobile-small {
+        gap: 0px
+      }
+    }
+  
+    .steps-graph {
+      width: fit-content;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 58vw;
+      min-width: 981px;
+      max-width: 1178px;
+  
+      @media screen and (max-width: 1381px) {
+        width: 48vw;
+        max-width: 100vw;
+        min-width: 817px;
+      }
+  
+      @include at-breakpoint {
+        flex-direction: column;
+        justify-content: center;
+        width: fit-content;
+        min-width: 0;
+        width: 200px;
+        padding-bottom: 113px;
+      }
+  
+      @include at-mobile-small {
+        display: none;
+      }
+  
+      .steps-graph-svg {
+        svg line {
+          width: 30%;
+          height: 1px;
+        }
+      }
+    }
+  }
+  
