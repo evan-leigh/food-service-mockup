@@ -15,7 +15,7 @@ const Hero = () => {
               width={900}
               quality={95}
               placeholder='none'
-              src='../assets/images/dishes-A.png'
+              src='../../assets/images/dishes-A.png'
               alt='selection of food'
             />
           </div>
@@ -23,7 +23,7 @@ const Hero = () => {
             <StaticImage
               layout='fullWidth'
               placeholder='none'
-              src='../assets/images/dishes-A-mobile.png'
+              src='../../assets/images/dishes-A-mobile.png'
               alt='selection of food'
             />
           </div>

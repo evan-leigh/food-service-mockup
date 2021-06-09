@@ -38,7 +38,7 @@ const Selection = () => {
                 width={900}
                 quality={95}
                 placeholder='none'
-                src='../assets/images/dishes-B.png'
+                src='../../assets/images/dishes-B.png'
                 alt='selection of food'
               />
             </div>
@@ -47,7 +47,7 @@ const Selection = () => {
               <StaticImage
                 layout='fullWidth'
                 placeholder='none'
-                src='../assets/images/dishes-B-mobile.png'
+                src='../../assets/images/dishes-B-mobile.png'
                 alt='selection of food'
               />
             </div>
