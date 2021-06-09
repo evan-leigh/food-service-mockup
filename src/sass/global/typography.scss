@@ -8,7 +8,7 @@
   h1 {
       @include at-mobile {
           font-size: 36px;
-          line-height: 1.5em !important;
+          line-height: 1.4em !important;
       }
       @include at-mobile-small {
           font-size: 10.5vw !important;
@@ -16,6 +16,7 @@
   }
 
   h2 {
+    line-height: 1.6em !important;
     @include at-mobile {
         font-size: 36px;
         line-height: 1.5em !important;
@@ -25,13 +26,18 @@
     }
 }
 
-  .paragraph.small {
-    font-size: 16px;
-  }
+p {
+  color: #797886;
+}
 
-  p {
-    @include at-mobile {
-        font-size: 16px;
-        line-height: 140%;
-    } 
+.link {
+  &.large {
+    font-weight: 500;
   }
+  &.medium {
+    font-weight: 500;
+  }
+  &.small {
+    font-weight: 500;
+  }
+}

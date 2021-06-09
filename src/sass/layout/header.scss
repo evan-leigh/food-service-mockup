@@ -3,20 +3,23 @@ header {
   top: 0; left: 0;
   width: 100%;
   padding: $padding * 4.5 $padding * 2.5;
+
   nav {
     margin-left: auto;
     width: fit-content;
     display: flex;
+    width: 550px;
+    gap: $gap-large;
+    @include at-breakpoint {
+      margin: 0 auto;
+      width: 500px;
+    }
   }
 
   .mobile {
     display: none;
     align-items: center;
     width: 100%;
-  }
-
-  .desktop {
-    // width: 890px;
   }
 
   .panel {
@@ -28,7 +31,7 @@ header {
     align-items: center;
     width: 50vw;
     height: 100vh;
-    background: $dark;
+    background: #202020;
     color: $white;
 
     @include at-mobile {
@@ -87,7 +90,7 @@ header {
   transition: all 0.4s ease;
 }
 
-  @media (max-width: $tablet) {
+  @include at-mobile {
     nav {
       flex-direction: column;
       margin: auto;

@@ -1,3 +1,6 @@
-.link {
-    padding: $padding $padding * 1.5;
+.break {
+    display: none;
+    @include at-mobile {
+        display: inline;
+    }
 }

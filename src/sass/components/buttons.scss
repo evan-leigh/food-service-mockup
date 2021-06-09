@@ -1,59 +1,65 @@
 button {
+  border-radius: 5px;
+  display: grid;
+  place-items: center;
+  box-shadow: $box-shadow-sm;
+  width: fit-content;
 
-    border-radius: 5px;
-    box-shadow: $box-shadow-sm;
-    width: fit-content;
+  .link {
+    padding: $padding * 2;
+  }
 
-    &.primary {
-        background-color: $primary;
-        color: $white;
-    }
+  &.primary {
+    background-color: $primary;
+    color: $white;
+  }
 
-    &.large {
-        height: 65px;
-        min-width: 220px;
-    }
-    &.medium {
-        min-width: 190px;
-    }
-    &.small {
-        min-width: 170px;
-    }
+  &.large {
+    min-width: 220px;
+  }
+  &.medium {
+    min-width: 190px;
+  }
+  &.small {
+    min-width: 170px;
+  }
 
-    svg {
-        vertical-align: middle;
-        width: 32px;
-        height: 32px;
-    }
+  svg {
+    vertical-align: middle;
+    transform: translateX(18px);
+    width: 28px;
+    height: 28px;
+  }
+
+  @include at-mobile {
+      width: 100%;
+      height: 100%;
+      flex-grow: 1;
+  }
 }
 
 .links {
-    @include at-mobile {
+  @include at-mobile {
+    gap: $gap-small;
+    flex-wrap: wrap;
 
-        gap: $gap-small;
-        
-        flex-wrap: wrap;
-        
-        input {
-            width: 100%;
-        }
-        button {
-            width: 100%;
-            flex-grow: 1;
-        }
+    input {
+      width: 100%;
+      height: 100%;
     }
+  }
 }
 
 form {
-    display: flex;
-    gap: $gap-medium;
+  display: flex;
+  gap: $gap-medium;
+  font-size: 16px;
 }
 
 input {
-    display: flex;
-    padding: $padding * 2;
-    box-shadow: $box-shadow-sm;
-    border-radius: 5px;
-    border: none;
-    height: 100%;
+  display: flex;
+  padding: $padding * 2;
+  box-shadow: $box-shadow-sm;
+  border-radius: 5px;
+  border: none;
 }

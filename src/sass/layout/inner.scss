@@ -5,8 +5,9 @@
     flex-wrap: wrap;
     justify-content: space-between;
     gap: $gap-medium;
-    flex-shrink: 1;
+    padding: 0 30px;
     max-width: $page-width;
-    flex-basis: $page-width;
-    padding: 0 20px;
+    @include at-breakpoint {
+        padding: 0 10px;
+    }
 }

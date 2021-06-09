@@ -19,12 +19,15 @@ import ValueOne from '../assets/svg/valueOne.svg'
 import ValueTwo from '../assets/svg/valueTwo.svg'
 import ValueThree from '../assets/svg/valueThree.svg'
 
+import 'react-responsive-carousel/lib/styles/carousel.min.css'
+import {Carousel} from 'react-responsive-carousel'
+
 const Line = () => {
   return (
     <svg
       width='30%'
       height='2'
-      preserveAspectRatio='false'
+      preserveAspectRatio='none'
       className='line'
       viewBox='0 0 279 2'
       fill='none'
@@ -32,8 +35,8 @@ const Line = () => {
       <path
         d='M0 1L279 0.999976'
         stroke='#818181'
-        stroke-width='2'
-        stroke-dasharray='12 5'
+        strokeWidth='2'
+        strokeDasharray='12 5'
       />
     </svg>
   )
@@ -51,7 +54,7 @@ const LineMobile = () => {
       <path
         d='M1.65045 0.764893L1.65046 179.182'
         stroke='#999999'
-        stroke-width='2'
+        strokeWidth='2'
         strokeDasharray='12 4'
       />
     </svg>
@@ -62,6 +65,7 @@ const Home = () => {
   return (
     <Layout>
       <Seo title='Home' />
+      {/* Hero */}
       <section className='hero'>
         <div className='inner'>
           <div className='content image'>
@@ -85,11 +89,11 @@ const Home = () => {
             </div>
           </div>
           <div className='content'>
-            <div className='paragraph medium'> Health awaits.</div>
+            <div className='paragraph'>Health awaits.</div>
             <h1
-              className='header large'
+              className='header'
               style={{
-                maxWidth: '530px',
+                maxWidth: '360px',
               }}>
               Healthy and delicious meals all customized to your liking
             </h1>
@@ -103,27 +107,24 @@ const Home = () => {
               <input
                 type='text'
                 placeholder='Your email address'
-                className='paragraph small'
+                className='link small'
               />
-              <button className='primary link small' style={{height: '65px'}}>
+              <Button className='primary link small' to='/'>
                 Get Started
-              </button>
+              </Button>
             </form>
-            <p className='paragraph small' style={{maxWidth: '544px'}}>
+            <p className='small' style={{maxWidth: '544px'}}>
               Nunc nulla quis ipsum, eget faucibus quis. Arcu ut in augue amet.
               Tempus nascetur fringilla eget mi arcu morbi.
             </p>
           </div>
         </div>
       </section>
+      {/* Steps */}
       <section className='steps'>
         <div className='inner'>
-          <div
-            className='content'
-            style={{
-              height: '180px',
-            }}>
-            <h2 className='header'>Just Four Simple Steps</h2>
+          <div className='header-container content'>
+            <h2 className='header'>Just Four <br className="break"/> Simple Steps</h2>
           </div>
           <div className='content graph'>
             <div className='steps-graph'>
@@ -139,33 +140,35 @@ const Home = () => {
               <Four />
             </div>
             <div className='content steps-content'>
-              <div>
+              <div className='step'>
                 <h3>Customize</h3>
-                <p className='paragraph small'>
+                <p className='small'>
                   Facilisis ipsum molestie felis risus nisl felis ac. Amet orci
                 </p>
               </div>
-              <div>
+              <div className='step'>
                 <h3>Order</h3>
-                <p className='paragraph small'>
+                <p className='small'>
                   Facilisis ipsum molestie felis risus nisl felis ac. Amet orci
                 </p>
               </div>
-              <div>
+              <div className='step'>
                 <h3>Cook</h3>
-                <p className='paragraph small'>
+                <p className='small'>
                   Facilisis ipsum molestie felis risus nisl felis ac. Amet orci
                 </p>
               </div>
-              <div>
+              <div className='step'>
                 <h3>Enjoy</h3>
-                <p className='paragraph small'></p>
-                Facilisis ipsum molestie felis risus nisl felis ac. Amet orci
+                <p className='small'>
+                  Facilisis ipsum molestie felis risus nisl felis ac. Amet orci
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
+      {/* Selection */}
       <section className='selection'>
         <div className='inner'>
           <div
@@ -173,8 +176,13 @@ const Home = () => {
             style={{
               maxWidth: '500px',
             }}>
-            <p>For every dish there is a story.</p>
-            <h1>We have an ulimited selection of high quality dishes</h1>
+            <p>
+              For every dish <br className='break' /> there is a story.
+            </p>
+            <h1 className='header'>
+              We have <br className='break' /> an ulimited selection of high
+              quality dishes
+            </h1>
             <p>
               Mattis tristique nunc, metus malesuada consequat, suspendisse. Nam
               vel quis proin diam egestas. Id massa sit tortor at quis.
@@ -183,8 +191,8 @@ const Home = () => {
               See All Dishes <ArrowForward />
             </Button>
           </div>
-          
-          <div className='content'>
+
+          <div className='content dishes-container'>
             <div className='dishes-B'>
               <StaticImage
                 layout='fixed'
@@ -195,7 +203,7 @@ const Home = () => {
                 alt='selection of food'
               />
             </div>
-            
+
             <div className='dishes-B-mobile'>
               <StaticImage
                 layout='fullWidth'
@@ -207,25 +215,25 @@ const Home = () => {
 
             <WaveOne className='wave-one' />
           </div>
-          <div
-            className='headline'
-            style={{
-              textAlign: 'center',
-              margin: '0 auto',
-              width: '535px',
-            }}>
-            <h2>Our every dish is curated with the best ingredients</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse bibendum id semper auctor molestie
-            </p>
-          </div>
+        </div>
+        <div
+          className='headline'
+          style={{
+            textAlign: 'center',
+            maxWidth: '535px',
+          }}>
+          <h2>Our every dish is curated with the best ingredients</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            bibendum id semper auctor molestie
+          </p>
         </div>
       </section>
+      {/* Values */}
       <section className='values'>
         <div className='inner'>
           <div className='content values-list'>
-            <div>
+            <div className='value'>
               <ValueOne />
               <h2>
                 Vegetarian <br /> Options
@@ -235,7 +243,7 @@ const Home = () => {
                 augue porta morbi in venenatis ultrices in.
               </p>
             </div>
-            <div>
+            <div className='value'>
               <ValueTwo />
               <h2>High Quality Ingredients</h2>
               <p>
@@ -243,7 +251,7 @@ const Home = () => {
                 augue porta morbi in venenatis ultrices in.
               </p>
             </div>
-            <div>
+            <div className='value'>
               <ValueThree />
               <h2>
                 Grass-fed <br /> Animals
@@ -254,9 +262,49 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div>
-            <p>For every dish theres a story.</p>
-            <h2>Helping over 1,400 people maintain a healthy diet</h2>
+        </div>
+      </section>
+      {/* Testemonials */}
+      <section className='testemonials'>
+        <div className='inner'>
+          <div className='content'>
+            <p>
+              For every dish <br className='break' /> theres a story.
+            </p>
+            <h2>
+              Helping over 1,400 people maintain a healthy diet
+            </h2>
+          </div>
+          <div className='content'>
+            <Carousel
+              autoPlay={false}
+              emulateTouch={true}
+              showStatus={false}
+              centerMode={false}
+              infiniteLoop={true}
+              showArrows={false}
+              transitionTime={300}
+              interval={5000}
+              swipeScrollTolerance={50}
+              autoPlay={true}
+              centerMode={true}
+              centerSlidePercentage={70}>
+              <div className='testemonial'>
+                <h1></h1>
+              </div>
+              <div className='testemonial'>
+                <h1></h1>
+              </div>
+              <div className='testemonial'>
+                <h1></h1>
+              </div>
+              <div className='testemonial'>
+                <h1></h1>
+              </div>
+              <div className='testemonial'>
+                <h1></h1>
+              </div>
+            </Carousel>
           </div>
         </div>
       </section>

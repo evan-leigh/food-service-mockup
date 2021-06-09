@@ -7,6 +7,7 @@ const typography = new Typography({
   headerFontFamily: ["Epilogue", "sans-serif"],
   bodyFontFamily: ["Poppins", "sans-serif"],
   headerWeight: "900",
+  blockMarginBottom: "0.5rem",
   includeNormalize: true,
   
   overrideStyles: ({adjustFontSizeTo}) => ({
