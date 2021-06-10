@@ -14,16 +14,6 @@ button {
     color: $white;
   }
 
-  &.large {
-    min-width: 220px;
-  }
-  &.medium {
-    min-width: 190px;
-  }
-  &.small {
-    min-width: 170px;
-  }
-
   svg {
     vertical-align: middle;
     transform: translateX(18px);
@@ -32,9 +22,13 @@ button {
   }
 
   @include at-mobile {
-      width: 100%;
-      height: 100%;
-      flex-grow: 1;
+    width: 100%;
+  }
+}
+
+.link {
+  @include at-mobile {
+    width: 100%;
   }
 }
 

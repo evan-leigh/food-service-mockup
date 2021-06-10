@@ -1,6 +1,7 @@
 header {
   position: absolute;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   padding: $padding * 4.5 $padding * 2.5;
 
@@ -9,7 +10,8 @@ header {
     width: fit-content;
     display: flex;
     width: 550px;
-    gap: $gap-large;
+    gap: 80px;
+
     @include at-breakpoint {
       margin: 0 auto;
       width: 500px;
@@ -25,7 +27,8 @@ header {
   .panel {
     position: fixed;
     z-index: 100;
-    top: 0; right: 0;
+    top: 0;
+    right: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,10 +46,11 @@ header {
     }
   }
 
-  
   .mobile.open {
     overflow: visible !important;
-    .rect-1, .rect-2, .rect-3 {
+    .rect-1,
+    .rect-2,
+    .rect-3 {
       transition: all 0.3s ease;
       width: 32px;
       fill: white;
@@ -54,11 +58,12 @@ header {
   }
 
   .mobile.close {
-    .rect-1, .rect-2, .rect-3 {
+    .rect-1,
+    .rect-2,
+    .rect-3 {
       transition: all 0.3s ease;
       fill: black;
     }
-
   }
 
   .mobile-menu {
@@ -69,26 +74,26 @@ header {
     top: 40px;
     right: 25px;
   }
-  
-.panel-enter {
-  transform: translateX(100%);
-  transition: all 0.4s ease;
-}
 
-.panel-enter-active {
-  transform: translateX(0%);
-  transition: all 0.4s ease;
-}
+  .panel-enter {
+    transform: translateX(100%);
+    transition: all 0.4s ease;
+  }
 
-.panel-exit {
-  transform: translateX(0%);
-  transition: all 0.4s ease;
-}
+  .panel-enter-active {
+    transform: translateX(0%);
+    transition: all 0.4s ease;
+  }
 
-.panel-exit-active {
-  transform: translateX(100%);
-  transition: all 0.4s ease;
-}
+  .panel-exit {
+    transform: translateX(0%);
+    transition: all 0.4s ease;
+  }
+
+  .panel-exit-active {
+    transform: translateX(100%);
+    transition: all 0.4s ease;
+  }
 
   @include at-mobile {
     nav {
@@ -106,4 +111,3 @@ header {
     }
   }
 }
-

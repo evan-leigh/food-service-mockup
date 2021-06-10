@@ -1,8 +1,8 @@
 import * as React from 'react'
 
-import {StaticImage} from "gatsby-plugin-image"
+import {StaticImage} from 'gatsby-plugin-image'
 
-import Button from "../../components/button"
+import Button from '../../components/button'
 
 const Hero = () => {
   return (
@@ -29,11 +29,17 @@ const Hero = () => {
           </div>
         </div>
         <div className='content'>
-          <div className='paragraph'>Health awaits.</div>
+          <p
+            className='paragraph'
+            style={{
+              marginBottom: '-21px',
+            }}>
+            Made with care in mind.
+          </p>
           <h1
             className='header'
             style={{
-              maxWidth: '360px',
+              maxWidth: '510px',
             }}>
             Healthy and delicious meals all customized to your liking
           </h1>

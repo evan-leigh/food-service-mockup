@@ -1,86 +1,85 @@
-
 section.selection {
-    height: 1640px;
-    position: relative;
-    
-    @include at-mobile {
-      height: 1840px;
-    }
-  
-    .content {
-      @include at-breakpoint {
-        margin: 0 auto;
-      }
-    }
-  
-    .dishes-container {
-      @include at-breakpoint {
-        order: 3;
-      }
-    }
-  
-    .dishes-B {
-      z-index: 2;
-      width: 40vw;
-    }
-    
-    .dishes-B-mobile {
-      z-index: 2;
-      @include absolute-center;
-      display: none;
-      position: absolute;
-      max-width: 1000px;
-      min-width: 700px;
-      width: 120%;
-  
-      @include at-breakpoint {
-        left: 75%;
-        top: 55%;
-      }
-  
-      @include at-mobile {
-        left: 95%;
-        top: 61%;
-      }
-    }
-    
+  height: 1640px;
+  position: relative;
+
+  @include at-mobile {
+    height: 1940px;
+  }
+
+  .content {
     @include at-breakpoint {
-      .dishes-B {
-        display: none;
-      }
-      .dishes-B-mobile {
-        display: inline;
-      }
-    }
-  
-      
-    .headline {
-      position: absolute;
-      bottom: 140px;
-      left: 50%;
-      transform: translateX(-50%);
-      @include at-breakpoint {
-        width: 100%;
-        order: 4;
-      }
-      @include at-mobile {
-        bottom: 200px;
-      }
-      @include at-mobile-small {
-        bottom: 150px;
-      }
-    }
-  
-    .wave-one {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      pointer-events: none;
-      min-width: 870px;
-      @include at-mobile {
-        bottom: 380px;
-        transform: scale(1.6);
-      }
+      margin: 0 auto;
     }
   }
-  
+
+  .dishes-container {
+    @include at-breakpoint {
+      order: 3;
+    }
+  }
+
+  .dishes-B {
+    z-index: 2;
+    width: 40vw;
+  }
+
+  .dishes-B-mobile {
+    z-index: 2;
+    @include absolute-center;
+    display: none;
+    position: absolute;
+    max-width: 1000px;
+    min-width: 900px;
+    width: 120%;
+
+    @include at-breakpoint {
+      left: 75%;
+      top: 55%;
+    }
+
+    @include at-mobile {
+      left: 95%;
+      top: 61%;
+    }
+  }
+
+  @include at-breakpoint {
+    .dishes-B {
+      display: none;
+    }
+    .dishes-B-mobile {
+      display: inline;
+    }
+  }
+
+  .headline {
+    position: relative;
+    @include center-x;
+    order: 3;
+
+    @include at-breakpoint {
+      top: 650px;
+    }
+
+    @include at-mobile {
+      top: 787px;
+    }
+
+    @include at-mobile-small {
+      top: 800px;
+    }
+  }
+
+  .wave-one {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    min-width: 870px;
+
+    @include at-mobile {
+      bottom: 380px;
+      transform: scale(1.7) translateY(-30px);
+    }
+  }
+}

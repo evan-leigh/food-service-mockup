@@ -1,35 +1,50 @@
 @mixin absolute-center {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%; left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
 }
 
 @mixin absolute-center-y {
-    position: absolute;
-    transform: translateY(-50%);
-    top: 50%; left: 0;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 0;
+}
+
+@mixin center-x {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin pseudo($arg) {
+  &::#{$arg} {
+    content: '';
+    @content;
+  }
 }
 
 @mixin absolute-center-x {
-    position: absolute;
-    transform: translateX(-50%);
-    top: 0; left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  top: 0;
+  left: 50%;
 }
 
 @mixin at-mobile {
-    @media screen and (max-width: $mobile-breakpoint) {
-        @content
-    }
-};
+  @media screen and (max-width: $mobile-breakpoint) {
+    @content;
+  }
+}
 
 @mixin at-mobile-small {
-    @media screen and (max-width: $mobile-breakpoint-small) {
-        @content
-    }
-};
+  @media screen and (max-width: $mobile-breakpoint-small) {
+    @content;
+  }
+}
 
 @mixin at-breakpoint {
-    @media screen and (max-width: $page-breakpoint) {
-        @content
-    }
+  @media screen and (max-width: $page-breakpoint) {
+    @content;
+  }
 }

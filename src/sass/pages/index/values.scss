@@ -1,17 +1,16 @@
 section.values {
-    .values-list {
-      gap: 120px;
-      display: grid;
-      max-width: initial;
-      grid-template-columns: repeat(3, 1fr);
-      
-  
-      @include at-breakpoint {
-        grid-template-columns: 1fr;
-        max-width: 500px;
-        .value {
-          margin: 0 auto;
-        }
+  .values-list {
+    gap: 120px;
+    display: grid;
+    max-width: initial;
+    grid-template-columns: repeat(3, 1fr);
+
+    @include at-breakpoint {
+      grid-template-columns: 1fr;
+      max-width: 500px;
+      .value {
+        margin: 0 auto;
       }
     }
   }
+}
