@@ -7,6 +7,17 @@ import Button from '../../components/button'
 const Hero = () => {
   return (
     <section className='hero'>
+      <div className='backdrop'>
+        <StaticImage
+          className='backdrop-image'
+          layout='fullWidth'
+          placeholder='none'
+          style={{position: 'absolute'}}
+          src='../../assets/images/backdrop.png'
+          alt='selection of food'
+          quality={95}
+        />
+      </div>
       <div className='inner'>
         <div className='content image'>
           <div className='dishes-A'>
@@ -32,14 +43,14 @@ const Hero = () => {
           <p
             className='paragraph'
             style={{
-              marginBottom: '-21px',
+              marginBottom: '-13px',
             }}>
             Made with care in mind.
           </p>
           <h1
             className='header'
             style={{
-              maxWidth: '510px',
+              maxWidth: '540px',
             }}>
             Healthy and delicious meals all customized to your liking
           </h1>

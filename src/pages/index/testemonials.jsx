@@ -19,6 +19,7 @@ const Testemonials = () => {
             showStatus={false}
             showThumbs={false}
             infiniteLoop={true}
+            verticalSwipe={'natural'}
             showArrows={false}
             transitionTime={300}
             interval={5000}

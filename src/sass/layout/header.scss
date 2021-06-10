@@ -1,20 +1,26 @@
 header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: $padding * 4.5 $padding * 2.5;
+  z-index: 100;
+  a {
+    white-space: nowrap;
+  }
+
+  .desktop {
+    background: #fff;
+    box-shadow: $box-shadow-large;
+    z-index: 100;
+  }
 
   nav {
     margin-left: auto;
-    width: fit-content;
+    padding: 20px 55px;
+    max-width: 700px;
+    z-index: 100;
+    justify-content: space-between;
     display: flex;
-    width: 550px;
     gap: 80px;
 
     @include at-breakpoint {
       margin: 0 auto;
-      width: 500px;
     }
   }
 
@@ -26,34 +32,50 @@ header {
 
   .panel {
     position: fixed;
-    z-index: 100;
     top: 0;
     right: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 50vw;
+    transform: translateY(0%);
+    border-bottom: 2px solid #0003;
+    width: 100vw;
     height: 100vh;
-    background: #202020;
-    color: $white;
-
-    @include at-mobile {
-      width: 80vw;
-    }
+    background: #fff;
+    color: #0009;
 
     .link {
       width: 180px;
     }
   }
 
+  .panel-enter {
+    transform: translateY(-100%);
+    transition: all 0.4s ease;
+  }
+
+  .panel-enter-active {
+    transform: translateY(0%);
+    transition: all 0.4s ease;
+  }
+
+  .panel-exit {
+    transform: translateY(0%);
+    transition: all 0.4s ease;
+  }
+
+  .panel-exit-active {
+    transform: translateY(-100%);
+    transition: all 0.4s ease;
+  }
+
   .mobile.open {
     overflow: visible !important;
+
     .rect-1,
     .rect-2,
     .rect-3 {
       transition: all 0.3s ease;
       width: 32px;
-      fill: white;
     }
   }
 
@@ -62,7 +84,6 @@ header {
     .rect-2,
     .rect-3 {
       transition: all 0.3s ease;
-      fill: black;
     }
   }
 
@@ -72,35 +93,18 @@ header {
     z-index: 200;
     position: fixed;
     top: 40px;
-    right: 25px;
-  }
-
-  .panel-enter {
-    transform: translateX(100%);
-    transition: all 0.4s ease;
-  }
-
-  .panel-enter-active {
-    transform: translateX(0%);
-    transition: all 0.4s ease;
-  }
-
-  .panel-exit {
-    transform: translateX(0%);
-    transition: all 0.4s ease;
-  }
-
-  .panel-exit-active {
-    transform: translateX(100%);
-    transition: all 0.4s ease;
+    right: 3vw;
   }
 
   @include at-mobile {
     nav {
       flex-direction: column;
       margin: auto;
-      gap: 20px;
+      gap: 10%;
     }
+
+    background: #fff0;
+    box-shadow: none;
 
     .mobile {
       display: flex;

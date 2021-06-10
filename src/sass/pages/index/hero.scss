@@ -1,52 +1,62 @@
 section.hero {
-    background-image: url('../assets/images/backdrop.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-size: cover;
-  
+  position: relative;
+
+  .backdrop-image {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 121%;
+    z-index: -1;
+    position: absolute;
+  }
+
+  .header {
     @include at-breakpoint {
-      height: 1100px;
-      .inner {
-        justify-content: space-around;
-      }
+      max-width: 420px !important;
     }
-    form {
-      justify-content: space-between;
-      input {
-        flex-grow: 1;
-        flex-shrink: 1;
-      }
+  }
+
+  @include at-breakpoint {
+    height: 1100px;
+    .inner {
+      justify-content: space-around;
     }
-  
-    .image {
-      position: relative;
-  
+  }
+  form {
+    justify-content: space-between;
+    input {
+      flex-grow: 1;
+      flex-shrink: 1;
+    }
+  }
+
+  .image {
+    position: relative;
+
+    @include at-breakpoint {
+      order: 1;
+    }
+
+    .dishes-A {
+      @include absolute-center;
       @include at-breakpoint {
-        order: 1;
-      }
-  
-      .dishes-A {
-        @include absolute-center;
-        left: 15%;
-        @include at-breakpoint {
-          display: none;
-        }
-      }
-  
-      .dishes-A-mobile {
-        position: absolute;
-        transform: translate(-50%, -50%) rotate(-35deg);
-        top: 260px;
-        left: 50%;
-        width: 200%;
-        min-width: 700px;
-        max-width: 1000px;
         display: none;
-  
-        @include at-breakpoint {
-          display: inline;
-        }
+      }
+    }
+
+    .dishes-A-mobile {
+      position: absolute;
+      transform: translate(-50%, -50%) rotate(-35deg);
+      top: 260px;
+      left: 50%;
+      width: 200%;
+      min-width: 700px;
+      max-width: 1000px;
+      display: none;
+
+      @include at-breakpoint {
+        display: inline;
       }
     }
   }
-  
+}

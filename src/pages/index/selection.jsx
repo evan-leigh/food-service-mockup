@@ -46,6 +46,7 @@ const Selection = () => {
           <div className='dishes-B-mobile '>
             <StaticImage
               layout='fullWidth'
+              quality={100}
               placeholder='none'
               src='../../assets/images/dishes-B-mobile.png'
               alt='selection of food'
@@ -55,7 +56,7 @@ const Selection = () => {
           <WaveOne className='wave-one' />
         </div>
         <div
-          className='headline'
+          className='headline content'
           style={{
             textAlign: 'center',
             maxWidth: '535px',

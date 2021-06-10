@@ -25,8 +25,8 @@ const Values = () => {
               High Quality <br /> Ingredients
             </h2>
             <p>
-              Facilisis ipsum molestie felis risus nisl felis ac. Amet orci
-              augue porta morbi in venenatis ultrices in.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut
+              dolore itaque voluptates
             </p>
           </div>
           <div className='value'>
@@ -35,8 +35,8 @@ const Values = () => {
               Grass-fed <br /> Animals
             </h2>
             <p>
-              Facilisis ipsum molestie felis risus nisl felis ac. Amet orci
-              augue porta morbi in venenatis ultrices in.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+              a, cum iusto itaque, optio repellat eius impedit
             </p>
           </div>
         </div>

@@ -1,38 +1,39 @@
 @font-face {
-    font-family: "Epilogue";
-    src: url("../fonts/Epilogue-ExtraBold.ttf");
-    font-weight: 800;
-    font-display: swap
-  }
+  font-family: 'Epilogue';
+  src: url('../fonts/Epilogue-ExtraBold.woff2');
+  font-weight: 800;
+  font-display: swap;
+}
 
-  h1 {
-      @include at-mobile {
-          font-size: 36px;
-          line-height: 1.4em !important;
-      }
-      @include at-mobile-small {
-          font-size: 10.5vw !important;
-      }
+h1 {
+  @include at-mobile {
+    font-size: 36px;
+    line-height: 1.4em !important;
   }
+  @include at-mobile-small {
+    font-size: 10.5vw !important;
+  }
+}
 
-  h2 {
-    line-height: 1.6em !important;
-    @include at-mobile {
-        font-size: 36px;
-        line-height: 1.5em !important;
-    }
-    @include at-mobile-small {
-      font-size: 10.5vw !important;
-    }
+h2 {
+  line-height: 1.6em !important;
+  @include at-mobile {
+    font-size: 36px;
+    line-height: 1.5em !important;
+  }
+  @include at-mobile-small {
+    font-size: 10.5vw !important;
+  }
 }
 
 p {
-  color: #797886;
+  color: #484750;
 }
 
 .link {
   &.large {
     font-weight: 500;
+    font-size: 28px;
   }
   &.medium {
     font-weight: 500;

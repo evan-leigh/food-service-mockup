@@ -1,25 +1,24 @@
 //  1 - Library
-    @import './libraries/functions';
-    @import './libraries/variables';
-    @import './libraries/mixins';
-    @import './libraries/classes';
-    
+@import './libraries/functions';
+@import './libraries/variables';
+@import './libraries/mixins';
+@import './libraries/classes';
+
 //  2 - Global
-    @import './global/reset';
-    @import './global/page.scss';
-    @import './global/helpers';
-    @import './global/typography';
+@import './global/reset';
+@import './global/page.scss';
+@import './global/helpers';
+@import './global/typography';
 
 //  3 - Modules
-    @import "./components/buttons.scss";
+@import './components/buttons.scss';
 
-    
 //  4 - Layout
-    @import './layout/breakpoints.scss';
-    @import './layout/header.scss';
-    @import './layout/section.scss';
-    @import './layout/inner.scss';
-    @import './layout/content.scss';
+@import './layout/breakpoints.scss';
+@import './layout/header.scss';
+@import './layout/section.scss';
+@import './layout/inner.scss';
+@import './layout/content.scss';
 
 //  5 - Pages
-    @import './pages/index'
+@import './pages/index';

@@ -18,13 +18,7 @@ section.selection {
     }
   }
 
-  .dishes-B {
-    z-index: 2;
-    width: 40vw;
-  }
-
   .dishes-B-mobile {
-    z-index: 2;
     @include absolute-center;
     display: none;
     position: absolute;
@@ -39,7 +33,6 @@ section.selection {
 
     @include at-mobile {
       left: 95%;
-      top: 61%;
     }
   }
 
@@ -55,18 +48,13 @@ section.selection {
   .headline {
     position: relative;
     @include center-x;
+    padding: 0 10px;
     order: 3;
 
     @include at-breakpoint {
-      top: 650px;
-    }
-
-    @include at-mobile {
-      top: 787px;
-    }
-
-    @include at-mobile-small {
-      top: 800px;
+      position: absolute;
+      bottom: 160px;
+      width: 100%;
     }
   }
 
@@ -74,6 +62,7 @@ section.selection {
     position: absolute;
     bottom: 0;
     left: 0;
+    z-index: -1;
     pointer-events: none;
     min-width: 870px;
 
