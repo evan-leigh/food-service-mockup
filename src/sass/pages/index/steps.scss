@@ -4,6 +4,14 @@ section.steps {
   position: relative;
   overflow: visible;
 
+  .inner {
+    transform: translateY(-20px);
+
+    @include at-breakpoint {
+      max-width: 700px;
+    }
+  }
+
   .line-mobile {
     display: none;
   }
@@ -19,7 +27,9 @@ section.steps {
   }
 
   .header-container {
+    width: 100%;
     @include at-breakpoint {
+      width: 90%;
       margin: 0 auto;
     }
   }
@@ -48,14 +58,15 @@ section.steps {
   }
 
   .graph {
+    min-width: 90%;
     max-width: 100%;
     width: 100%;
 
     @include at-breakpoint {
+      width: 90%;
       justify-content: space-around;
       flex-direction: row;
       margin: 0 auto;
-      max-width: 500px;
     }
 
     @include at-mobile {

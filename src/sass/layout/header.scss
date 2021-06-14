@@ -1,12 +1,13 @@
 header {
   z-index: 100;
+
   a {
     white-space: nowrap;
   }
 
   .desktop {
     background: #fff;
-    box-shadow: $box-shadow-large;
+    box-shadow: $box-shadow-sm;
     z-index: 100;
   }
 
@@ -35,13 +36,25 @@ header {
     top: 0;
     right: 0;
     display: flex;
-    justify-content: center;
-    transform: translateY(0%);
-    border-bottom: 2px solid #0003;
-    width: 100vw;
-    height: 100vh;
     background: #fff;
+    justify-content: center;
+    box-shadow: $box-shadow-medium;
+    transform: translateY(0%);
+    width: 100vw;
+    height: 80vh;
+    // outline: 100vh solid #0008;
     color: #0009;
+
+    // @include pseudo(after) {
+    //   position: absolute;
+    //   top: 65vh;
+    //   left: 0;
+    //   background: white;
+    //   height: 20vh;
+    //   border-radius: 20px;
+    //   width: 100%;
+    //   z-index: 0;
+    // }
 
     .link {
       width: 180px;
@@ -51,21 +64,25 @@ header {
   .panel-enter {
     transform: translateY(-100%);
     transition: all 0.4s ease;
+    // outline: 100vh solid #0000;
   }
 
   .panel-enter-active {
     transform: translateY(0%);
     transition: all 0.4s ease;
+    // outline: 100vh solid #0008;
   }
 
   .panel-exit {
     transform: translateY(0%);
     transition: all 0.4s ease;
+    // outline: 100vh solid #0008;
   }
 
   .panel-exit-active {
     transform: translateY(-100%);
     transition: all 0.4s ease;
+    // outline: 100vh solid #0000;
   }
 
   .mobile.open {
@@ -100,7 +117,7 @@ header {
     nav {
       flex-direction: column;
       margin: auto;
-      gap: 10%;
+      gap: 5%;
     }
 
     background: #fff0;

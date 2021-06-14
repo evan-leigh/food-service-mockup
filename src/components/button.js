@@ -3,8 +3,10 @@ import * as React from 'react'
 
 const Button = ({children, className, to}) => {
   return (
-    <button className={className}>
-      <Link to={to} className="link" >{children}</Link>
+    <button tabIndex='-1' className={className}>
+      <Link to={to} className='link'>
+        {children}
+      </Link>
     </button>
   )
 }

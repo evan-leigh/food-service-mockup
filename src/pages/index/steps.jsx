@@ -49,11 +49,11 @@ const Steps = () => {
     <section className='steps'>
       <div className='inner'>
         <div className='header-container content'>
-          <h2 className='header'>
+          <h2 className='header fade-in'>
             Just Four <br /> Simple Steps
           </h2>
         </div>
-        <div className='content graph'>
+        <div className='content graph fade-in'>
           <div className='counter'>
             <One />
             <Line />

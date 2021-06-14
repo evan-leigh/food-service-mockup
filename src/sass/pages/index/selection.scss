@@ -6,6 +6,15 @@ section.selection {
     height: 1940px;
   }
 
+  .content:first-child {
+    .header {
+      max-width: 530px;
+    }
+    .paragraph {
+      max-width: 500px;
+    }
+  }
+
   .content {
     @include at-breakpoint {
       margin: 0 auto;

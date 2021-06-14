@@ -5,10 +5,16 @@ module.exports = {
     author: `Evan Smith`,
   },
 
-  pathPrefix: "/food-service-mockup/src/pages",
+  pathPrefix: '/food-service-mockup/src/pages',
+
+  flags: {
+    FAST_DEV: true,
+    FAST_REFRESH: true,
+    DEV_SSR: true,
+    LAZY_IMAGES: true,
+  },
 
   plugins: [
-    
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sass`,
@@ -21,12 +27,12 @@ module.exports = {
     },
 
     {
-      resolve: "gatsby-plugin-react-svg",
+      resolve: 'gatsby-plugin-react-svg',
       options: {
         rule: {
           include: /svg/,
-        }
-      }
+        },
+      },
     },
 
     {
@@ -38,7 +44,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    
+
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

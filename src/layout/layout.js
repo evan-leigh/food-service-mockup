@@ -1,21 +1,23 @@
-import * as React from "react"
+import * as React from 'react'
 
-import Header from "./header"
-import Footer from "./footer"
+import Header from './header'
+import Footer from './footer'
 
-import { TypographyStyle } from 'react-typography'
+import {TypographyStyle} from 'react-typography'
 import typography from '../utils/typography'
 
 import '../sass/main.scss'
 
-const Layout = ({ children }) => {
+const Layout = ({children}) => {
   return (
-    <main>
-      <TypographyStyle typography={typography} />
-      <Header />
-      {children}
-      <Footer />
-    </main>
+    <>
+      <main>
+        <Header />
+        <TypographyStyle typography={typography} />
+        {children}
+        <Footer />
+      </main>
+    </>
   )
 }
 

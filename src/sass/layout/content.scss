@@ -6,8 +6,11 @@
   min-height: 2px;
 
   @include at-breakpoint {
-    max-width: 500px;
+    max-width: 700px;
     margin: 0 auto;
     width: 100%;
+  }
+  @include at-mobile {
+    max-width: 500px;
   }
 }

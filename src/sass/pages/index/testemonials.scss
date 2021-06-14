@@ -1,9 +1,27 @@
 section.testemonials {
   .inner {
     @include at-breakpoint {
+      max-width: 500px;
       flex-direction: column;
     }
   }
+
+  .carousel.desktop {
+    display: block;
+
+    @include at-breakpoint {
+      display: none;
+    }
+  }
+
+  .carousel.mobile {
+    display: none;
+
+    @include at-breakpoint {
+      display: block;
+    }
+  }
+
   .content {
     @include at-breakpoint {
       margin: 0 auto;

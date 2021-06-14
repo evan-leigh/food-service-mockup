@@ -5,6 +5,10 @@ section.values {
     max-width: initial;
     grid-template-columns: repeat(3, 1fr);
 
+    .paragraph {
+      max-width: 400px;
+    }
+
     @include at-breakpoint {
       grid-template-columns: 1fr;
       max-width: 500px;
