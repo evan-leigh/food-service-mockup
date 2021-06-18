@@ -59,7 +59,7 @@ const Selection = () => {
             maxWidth: "535px",
           }}>
           <h2 className="fade-in">
-            Our every dish is curated with the best ingredients
+            Every dish is curated with the best ingredients
           </h2>
           <p className="fade-in">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse

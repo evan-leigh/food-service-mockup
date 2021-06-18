@@ -57,6 +57,7 @@ section.selection {
   .headline {
     position: relative;
     @include center-x;
+    bottom: -60px;
     padding: 0 10px;
     order: 3;
 
