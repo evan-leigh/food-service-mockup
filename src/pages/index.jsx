@@ -1,45 +1,42 @@
-import React, {useEffect} from 'react'
-import {gsap, ScrollTrigger} from 'gsap/all'
+import React, { useEffect } from "react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { gsap } from "gsap";
 
-import Layout from '../layout/layout'
-import Seo from '../layout/seo'
-import Hero from './index/hero'
-import Steps from './index/steps'
-import Selection from './index/selection'
-import Values from './index/values'
-import Testemonials from './index/testemonials'
+import Layout from "../layout/layout";
+import Seo from "../layout/seo";
+import Hero from "./index/hero";
+import Steps from "./index/steps";
+import Selection from "./index/selection";
+import Values from "./index/values";
+import Testemonials from "./index/testemonials";
 
 const Index = () => {
-	gsap.registerPlugin(ScrollTrigger)
+  gsap.registerPlugin(ScrollTrigger);
 
-	useEffect(() => {
-		const fadeIn = gsap.utils.toArray('.fade-in')
-		fadeIn.forEach((element) => {
-			gsap.to(element, {
-				y: -10,
-				duration: 0.4,
-				ease: 'Power3.out',
-				opacity: '1',
-				delay: 0.2,
+  useEffect(() => {
+    ScrollTrigger.batch(".fade-in", {
+      start: "middle 90%",
+      onEnter: (batch) =>
+        gsap.to(batch, {
+          opacity: 1,
+          duration: 1.2,
+          y: "-10",
+          stagger: 0.3,
+          ease: "power4.out",
+        }),
+    });
+  });
 
-				scrollTrigger: {
-					trigger: element,
-					start: 'bottom 80%',
-				},
-			})
-		})
-	})
+  return (
+    <Layout>
+      <Seo title="Home" />
+      <Hero />
+      <Steps />
+      <Selection />
+      <Values />
+      <Testemonials />
+    </Layout>
+  );
+};
 
-	return (
-		<Layout>
-			<Seo title='Home' />
-			<Hero />
-			<Steps />
-			<Selection />
-			<Values />
-			<Testemonials />
-		</Layout>
-	)
-}
-
-export default Index
+export default Index;

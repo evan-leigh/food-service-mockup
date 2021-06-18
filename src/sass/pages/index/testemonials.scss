@@ -6,6 +6,16 @@ section.testemonials {
     }
   }
 
+  .testemonial-image {
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+
+  .carousel {
+    z-index: 0;
+  }
+
   .carousel.desktop {
     display: block;
 
@@ -16,7 +26,6 @@ section.testemonials {
 
   .carousel.mobile {
     display: none;
-
     @include at-breakpoint {
       display: block;
     }
@@ -37,7 +46,6 @@ section.testemonials {
 
       .carousel-slider {
         overflow: visible;
-
         .dot {
           background: #adadad;
           box-shadow: 1px 1px 2px rgb(0 0 0 / 40%);
@@ -46,8 +54,14 @@ section.testemonials {
 
       .testemonial {
         height: 400px;
-        border-radius: 15px;
+        padding: 2rem;
+        border-radius: 30px;
         background: white;
+
+        @include at-breakpoint {
+          padding: 0.5rem;
+          height: 430px;
+        }
       }
 
       .slide {
@@ -62,11 +76,13 @@ section.testemonials {
 
       &::after,
       &::before {
-        content: '';
+        content: "";
         position: absolute;
         height: 100%;
         width: 20%;
-        z-index: 3;
+        @include at-breakpoint {
+          display: none;
+        }
       }
 
       &::after {

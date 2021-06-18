@@ -4,7 +4,7 @@ import * as React from 'react'
 const Button = ({children, className, to}) => {
   return (
     <button tabIndex='-1' className={className}>
-      <Link to={to} className='link'>
+      <Link to={to} className='link small'>
         {children}
       </Link>
     </button>

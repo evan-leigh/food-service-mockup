@@ -1,10 +1,10 @@
 .break {
-	display: none;
-	@include at-mobile {
-		display: inline;
-	}
+  display: none;
+  @include at-mobile {
+    display: inline;
+  }
 }
 
 .fade-in {
-	opacity: 0;
+  opacity: 0;
 }

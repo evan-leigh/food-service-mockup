@@ -8,7 +8,7 @@ const typography = new Typography({
   bodyFontFamily: ['Poppins', 'sans-serif'],
   headerWeight: '900',
   blockMarginBottom: '0',
-  includeNormalize: true,
+  includeNormalize: false,
 
   overrideStyles: ({adjustFontSizeTo}) => ({
     h1: {
@@ -17,6 +17,10 @@ const typography = new Typography({
     h2: {
       ...adjustFontSizeTo('39px'),
     },
+    h3: {
+      ...adjustFontSizeTo('32px'),
+    },
+
 
     bodyFontFamily: {
       baseLineHeight: 2.4,

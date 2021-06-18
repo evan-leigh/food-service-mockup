@@ -7,6 +7,9 @@ button {
 
   .link {
     padding: $padding * 2;
+    &.small {
+      padding: $padding * 1.5;
+    }
   }
 
   &.primary {
@@ -16,7 +19,7 @@ button {
 
   svg {
     vertical-align: middle;
-    transform: translateX(18px);
+    transform: translateX(8px);
     width: 28px;
     height: 28px;
   }
